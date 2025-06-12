@@ -4,9 +4,10 @@
 (defonce counter (atom 0))
 
 (rum/defc view < rum/reactive []
-  [:h3 (str (rum/react counter))
-   [:button {:on-click #(swap! counter inc)} "+"]
-   [:button {:on-click #(swap! counter dec)} "-"]])
+          [:div
+           [:h3 (str (rum/react counter))]
+           [:button {:on-click #(swap! counter inc)} "+"]
+           [:button {:on-click #(swap! counter dec)} "-"]])
 
 (defn init []
   (rum/mount (view) (js/document.querySelector "#root")))
