@@ -1,0 +1,5 @@
+{:builds {:app {:modules {:main {:init-fn me.astynax.cljs-pokedex.app/init}},
+                :target :browser}},
+ :dependencies [[cljs-ajax "0.8.4"] [rum "0.12.10"]],
+ :dev-http {8000 "public"},
+ :source-paths ["src/dev" "src/main" "src/test"]}

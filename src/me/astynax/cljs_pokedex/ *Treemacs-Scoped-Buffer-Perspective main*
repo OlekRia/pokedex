@@ -1,0 +1,15 @@
+	pokedex
+  		.shadow-cljs
+  		node_modules
+  		public
+  		src
+    		main
+      		me
+        		astynax
+          		cljs_pokedex
+             		app.cljs
+    		me
+   		package-lock.json
+   		package.json
+   		README.org
+   shadow-cljs.edn
